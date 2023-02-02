@@ -1,4 +1,5 @@
 $(document).ready(function () {
-  alert("Olájq");
- console.log($('header button'))
+  $("header button").click(() => $("form").slideDown());
+  $("form").on("submit", (event) => event.preventDefault());
+  $("form .cancelar").click(() => $("form").slideUp());
 });
