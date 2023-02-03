@@ -56,3 +56,40 @@ button:hover {
 .cancelar:hover {
   background-color: rgb(220, 0, 0);
 }
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+ul li {
+  width: 25%;
+  position: relative;
+  max-height: 210px;
+  overflow: hidden;
+}
+
+ul li img {
+  width: 100%;
+}
+
+.image-overlay {
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all ease 250ms;
+}
+
+.image-overlay a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li:hover .image-overlay {
+  opacity: 1;
+}
